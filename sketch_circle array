@@ -9,6 +9,7 @@ color[] colArray = {
 
 void setup() {
   size(900,900);
+  setLocation(900,0);
   noLoop();
   noStroke();
   frameRate(10);

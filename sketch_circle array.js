@@ -1,43 +1,43 @@
-int colArrayCounter;
-color[] colArray = {
-  color(25, 165, 190),
-  color(95, 170, 200),
-  color(120, 190, 210),
-  color(170, 210, 230),
-  color(205, 225, 245),
-  color(220, 240, 250),
-
 function setup() {
-  size(900,900);
-  noLoop();
+  createCanvas(900,900);
+  //noLoop();
   noStroke();
   frameRate(10);
 }
 
 function draw() {
-  background(#282828);
+  background('grey');
   
   translate(width/2, height/2);
   
-  float rStep = 30;
-  float rMax = 400;
+  let rStep = 30;
+  let rMax = 400;
   
-  for (float r=0, r<rMax; r+=rStep) {
+  let colArrayCounter = 0;
+  let colArray = [
+  color(25, 165, 190),
+  color(95, 170, 200),
+  color(120, 190, 210),
+  color(170, 210, 230),
+  color(205, 225, 245),
+  color(220, 240, 250)]
   
-    float c = 2*PI*r;
-    float cSegment = map(r, 0, rMax, rStep*3/4, rStep/2);
-    float aSegment = floor(c/cSegment);
-    float ellipseSize = map(r, 0, rMax, rStep*3/4-1, rStep/4;
+  for (r=0; r<rMax; r+=rStep) {
+  
+    let c = 2*PI*r;
+    let cSegment = map(r, 0, rMax, rStep*3/4, rStep/2);
+    let aSegment = floor(c/cSegment);
+    let ellipseSize = map(r, 0, rMax, rStep*3/4-1, rStep/4);
     
-    for (float a=0; a<360; a+=360/aSegment; {
+    for (a=0; a<360; a+=360/aSegment); {
       colArrayCounter++;
       if(colArrayCounter>5) colArrayCounter = 0;
       fill(colArray[colArrayCounter]);
       
-      pushMatrix();
+      push();
       rotate(radians(a));
       ellipse(r, 0, ellipseSize, ellipseSize);
-      popMatrix();
+      pop();
     }
   }
 }

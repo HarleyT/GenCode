@@ -24,7 +24,7 @@ let sands = [];
 
 function setup() {
   let can = createCanvas(canvasWidth, canvasHeight);
-  can.parent('canvasContainer');  
+  //can.parent('canvasContainer');  
 
   cgrid = Array(dimx*dimy).fill(0);
   cracks = [];

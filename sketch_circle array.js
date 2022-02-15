@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-  background('grey');
+  //background('grey');
   
   translate(width/2, height/2);
   
@@ -34,10 +34,15 @@ function draw() {
       if(colArrayCounter>5) colArrayCounter = 0;
       fill(colArray[colArrayCounter]);
       
-      push();
-      rotate(radians(a));
-      ellipse(r, 0, ellipseSize, ellipseSize);
-      pop();
+      // polarEllipse( angle, widthRadius, heightRadius, [distance] )
+      setCenter(width/2, height/2);
+      polarEllipses(a, ellipseSize, ellipseSize, r);
+      
+      //ellipse(x, y, w, [h])
+      //push();
+      //rotate(radians(a));
+      //ellipse(r, 0, ellipseSize, ellipseSize);
+      //pop();
     }
   }
 }

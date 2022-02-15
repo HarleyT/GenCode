@@ -7,7 +7,7 @@ color[] colArray = {
   color(205, 225, 245),
   color(220, 240, 250),
 
-void setup() {
+function setup() {
   size(900,900);
   surface.setLocation(900,0);
   noLoop();
@@ -15,7 +15,7 @@ void setup() {
   frameRate(10);
 }
 
-void draw() {
+function draw() {
   background(#282828);
   
   translate(width/2, height/2);

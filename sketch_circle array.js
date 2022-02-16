@@ -23,10 +23,12 @@ function draw() {
   color(220, 240, 250)]
   
   // polarEllipse( angle, widthRadius, heightRadius, [distance] )
-  polarEllipses(10, 0, 0, 200, function(...args) {
-    fill(args[0]*40, args[0]*40, args[0]*40, 160);
-    args[2] = args[0]*6;
-    args[3] = args[0]*6;
+  polarEllipses(40, 0, 0, 200, function(...args) {
+    colArrayCounter++;
+    if(colArrayCounter>5) colArrayCounter = 0;
+      fill(colArray[colArrayCounter]);
+    args[2] = args[0]*2;
+    args[3] = args[0]*2;
     return args;     
   });
   

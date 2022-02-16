@@ -8,7 +8,7 @@ function setup() {
 function draw() {
   //background('grey');
   
-  translate(width/2, height/2);
+  //translate(width/2, height/2);
   
   let rStep = 30;
   let rMax = 400;
@@ -36,7 +36,7 @@ function draw() {
       
       // polarEllipse( angle, widthRadius, heightRadius, [distance] )
       setCenter(width/2, height/2);
-      polarEllipses(a, ellipseSize, ellipseSize, r);
+      polarEllipses(rStep, 1, 100, 20);
       
       //ellipse(x, y, w, [h])
       //push();

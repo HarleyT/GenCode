@@ -1,3 +1,9 @@
+---
+title: Substrate Testing
+layout: template
+filename: substrate_page
+--- 
+
 <html><head>
     <script src="p5.js"></script>    
     <script src="substrate.js"></script>

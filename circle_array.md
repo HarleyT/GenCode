@@ -4,4 +4,4 @@ layout: template
 filename: circle_array
 --- 
 
-<script src="sketch_circle array.js"></script>
+<script src="https://harleyt.github.io/GenCode/sketches/circle array.js"></script>

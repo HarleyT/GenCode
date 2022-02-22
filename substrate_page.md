@@ -7,7 +7,6 @@ filename: substrate_page
 <html><head>
     <script src="p5.js"></script>    
     <script src="substrate.js"></script>
-    <script src="p5.Polar.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
 </head>

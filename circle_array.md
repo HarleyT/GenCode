@@ -5,7 +5,6 @@ filename: circle_array
 --- 
 
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <script src="p5.js"></script>

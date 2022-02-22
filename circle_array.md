@@ -1,7 +1,7 @@
 ---
 title: Circle Array Testing
 layout: template
-filename: circle_array.md
+filename: circle_array
 --- 
 
 

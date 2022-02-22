@@ -13,7 +13,7 @@ filename: substrate_page
     <div class="outer">
         <div class="inner">
             <div id="canvasContainer"><canvas id="defaultCanvas0" class="p5Canvas" width="960" height="500" style="width: 960px; height: 500px;"></canvas></div>
-            <script src="substrate.js"></script>
+            <script src="substrate_port.js"></script>
         </div>
     </div>
   </body>

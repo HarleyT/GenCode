@@ -4,4 +4,4 @@ layout: template
 filename: substrate_page
 --- 
 
-<script src="substrate_port.js"></script>
+<script src="https://harleyt.github.io/GenCode/sketches/substrate.js"></script>

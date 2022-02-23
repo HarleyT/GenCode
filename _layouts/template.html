@@ -27,9 +27,9 @@
   </button>
   <div class="dropdown-content" id="myDropdown">
     {% for page in site.pages %}
-    <a href= {{ page.filename }} >{{ page.title }}</a>
+    <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
     {% endfor %}
-    <!---<a href="#">Link 1</a>--->
+    <a href="#">Link 1</a>
     <!---<a href="#">Link 2</a>--->
     <!---<a href="#">Link 3</a>--->
   </div>

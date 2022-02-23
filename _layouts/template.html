@@ -20,18 +20,18 @@
         <h2 class="project-tagline"></h2>
       
   <div class="navbar">
-  <a href="https://github.com/HarleyT/GenCode" class="btn">View on GitHub</a>
+  <a href="https://github.com/HarleyT/GenCode">View on GitHub</a>
   <div class="dropdown">
   <button class="dropbtn" onclick="myFunction()">Dropdown
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-content" id="myDropdown">
-    {% for page in site.pages %}
-    <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
-    {% endfor %}
     <a href="#">Link 1</a>
     <!---<a href="#">Link 2</a>--->
     <!---<a href="#">Link 3</a>--->
+    {% for page in site.pages %}
+    <a href= {{ page.filename }} >{{ page.title }}</a>
+    {% endfor %}
   </div>
   </div> 
 </div>

@@ -19,15 +19,12 @@
         <h1 class="project-name">Ryathimus</h1>
         <h2 class="project-tagline"></h2>
       
-      <select name="Sketches">
         {% for page in site.pages %}
         <a href= {{ page.filename }} >{{ page.title }}</a>
         {% endfor %}
-        <option value="second"</option>
-        <option value=<a href="https://github.com/HarleyT/GenCode">View on GitHub</a></option>
         <a href="https://github.com/HarleyT/GenCode">View on GitHub</a>
       </section>
-      
+      </section>
       <section class="main-content">
 
         {{ content }}

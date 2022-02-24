@@ -24,10 +24,10 @@
         <a href="https://github.com/HarleyT/GenCode" class="btn">View on GitHub</a>
       </section>
       
-          <div class="dropdown show">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+          </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             {% for page in site.pages %}
             <a href= {{ page.filename }} class="dropdown-item" >{{ page.title }}</a>
@@ -37,6 +37,8 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
           </div>
+
+      
       <section class="main-content">
 
         {{ content }}

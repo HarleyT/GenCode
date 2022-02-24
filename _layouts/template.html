@@ -29,12 +29,12 @@
             Dropdown button
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            {% for page in site.pages %}
-            <a href= {{ page.filename }} class="dropdown-item" >{{ page.title }}</a>
-            {% endfor %}
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <a class="dropdown-item" href="#">Something else here</a>
+            {% for page in site.pages %}
+            <a class="dropdown-item" href= {{ page.filename }} >{{ page.title }}</a>
+            {% endfor %}
           </div>
           </div>
 

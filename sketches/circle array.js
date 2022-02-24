@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(900,900);
+  createCanvas(900,900,SVG);
   //noLoop();
   noStroke();
   frameRate(10);

@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/tyndale.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     
-    <script src="p5.js"></script>
-    <script src="p5.polar.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.polar.js"></script>
     <!---<script src="sketch.js"></script>--->
     <!---<script src="substrate_port.js"></script>--->
     <!---<script src="sketch_circle array.js"></script>--->
@@ -18,18 +18,11 @@
       <section class="page-header">
         <h1 class="project-name">Ryathimus</h1>
         <h2 class="project-tagline"></h2>
-      </section>
-
-         <section class="dropdown">
-           <button class="dropbtn">Sketches</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              {% for page in site.pages %}
-              <a href= {{ page.filename }} >{{ page.title }}</a>
-              {% endfor %}
-            </div>
-          </section>
+          {% for page in site.pages %}
+          <a href= {{ page.filename }} >{{ page.title }}</a>
+          {% endfor %}
         <a href="https://github.com/HarleyT/GenCode" class="btn">View on GitHub</a>
+        </section>  
       
       <section class="main-content">
 

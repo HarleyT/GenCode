@@ -23,7 +23,7 @@ let cracks = [];
 let sands = [];
 
 function setup() {
-  let can = createCanvas(canvasWidth, canvasHeight);
+  let can = createCanvas(canvasWidth, canvasHeight, SVG);
   //can.parent('canvasContainer');  
 
   cgrid = Array(dimx*dimy).fill(0);

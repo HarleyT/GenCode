@@ -1,4 +1,3 @@
-frameCount = 500;
 let r;
 let factor = 1;
 
@@ -45,8 +44,8 @@ function draw() {
     
     strokeWeight(0.5);
     //bezier(a.x, a.y, b.x, b.y, c.x, c.y, d.x, d.y);
-    //line(d.x, b.y, a.x, a.y);
-    line(d.x,b.y,d.x,b.y);
+    line(d.x, b.y, a.x, a.y);
+    //line(d.x,b.y,d.x,b.y);
     //line(d.x,d.x,b.y,b.y);
     }
   }

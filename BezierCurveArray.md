@@ -1,7 +1,7 @@
 ---
 title: Bezier Curve Array
 layout: template
-filename: Bezier Curve Array
+filename: BezierCurveArray
 --- 
 
-<script src="sketches/Bezier Curve Array.js"></script>
+<script src="sketches/BezierCurveArray.js"></script>

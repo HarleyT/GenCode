@@ -1,3 +1,4 @@
+frameCount = 500;
 let r;
 let factor = 1;
 
@@ -15,7 +16,7 @@ function getVector(index, total) {
 
 function draw() {
   background(0);
-  const total = 1000;
+  const total = 500;
   factor += 0.02;
   text(frameCount, 10, 20);
 
@@ -44,7 +45,9 @@ function draw() {
     
     strokeWeight(0.5);
     //bezier(a.x, a.y, b.x, b.y, c.x, c.y, d.x, d.y);
-    line(d.x/2, c.y, a.x, a.y);
+    //line(d.x, b.y, a.x, a.y);
+    line(d.x,b.y,d.x,b.y);
+    //line(d.x,d.x,b.y,b.y);
     }
   }
 function mousePressed() {
@@ -53,4 +56,10 @@ function mousePressed() {
 
 function mouseReleased() {
   loop();
+}
+
+function keyTyped() {
+  if (key === 's') {
+    saveCanvas('Bezier_' + str(frameCount), 'png');
+  }
 }

@@ -109,14 +109,14 @@ function draw() {
     const b = getVector(i + 12, total);
     const c = getVector((i + 8) * factor, total);
     const d = getVector((i + 3) * factor, total);
-    a.x = val1;
-    a.y = val2;
-    b.x = val3;
-    b.y = val4;
+    //a.x = val1;
+    //a.y = val2;
+    //b.x = val3;
+    //b.y = val4;
     //c.x = val5;
     //c.y = val6;
-    d.x = val7;
-    d.y = val8;
+    //d.x = val7;
+    //d.y = val8;
 
     colArrayCounter++;
     if(colArrayCounter>5) colArrayCounter = 0;

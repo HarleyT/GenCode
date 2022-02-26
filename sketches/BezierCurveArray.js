@@ -15,41 +15,41 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(700, 700);
+  createCanvas(400, 400);
   r = height / 2 - 100;
   //directionalLight('white',width/2,height/2,200);
  
-  slider1 = createSlider(0.1, 3, 0.8, 0);
-  slider1.position(width / 2 - 100, height - 80);
-  slider1.style("width", "80px");
+  //slider1 = createSlider(0.1, 3, 0.8, 0);
+  //slider1.position(width / 2 - 100, height - 80);
+  //slider1.style("width", "80px");
   
-  slider2 = createSlider(10, 150, 20);
-  slider2.position(width / 2 - 100, height - 60);
-  slider2.style("width", "80px");
+  //slider2 = createSlider(10, 150, 20);
+  //slider2.position(width / 2 - 100, height - 60);
+  //slider2.style("width", "80px");
   
-  slider3 = createSlider(0, 700, 360);
-  slider3.position(width / 2 - 100, height - 40);
-  slider3.style("width", "80px");
+  //slider3 = createSlider(0, 700, 360);
+  //slider3.position(width / 2 - 100, height - 40);
+  //slider3.style("width", "80px");
   
-  slider4 = createSlider(0, 1, 1);
-  slider4.position(width / 2 - 100, height - 20);
-  slider4.style("width", "80px");
+  //slider4 = createSlider(0, 1, 1);
+  //slider4.position(width / 2 - 100, height - 20);
+  //slider4.style("width", "80px");
 
-  slider5 = createSlider(0, 50, 15);
-  slider5.position(width / 2 - 0, height - 80);
-  slider5.style("width", "80px");
+  //slider5 = createSlider(0, 50, 15);
+  //slider5.position(width / 2 - 0, height - 80);
+  //slider5.style("width", "80px");
 
-  slider6 = createSlider(0, 0.1, 0.008, 0);
-  slider6.position(width / 2 - 0, height - 60);
-  slider6.style("width", "80px");
+  //slider6 = createSlider(0, 0.1, 0.008, 0);
+  //slider6.position(width / 2 - 0, height - 60);
+  //slider6.style("width", "80px");
   
-  slider7 = createSlider(0.3, 3.2, 1.4, 0);
-  slider7.position(width / 2 - 0, height - 40);
-  slider7.style("width", "80px");
+  //slider7 = createSlider(0.3, 3.2, 1.4, 0);
+  //slider7.position(width / 2 - 0, height - 40);
+  //slider7.style("width", "80px");
   
-  slider8 = createSlider(0.001, 0.1, 0.0045, 0);
-  slider8.position(width / 2 - 0, height - 20);
-  slider8.style("width", "80px");
+  //slider8 = createSlider(0.001, 0.1, 0.0045, 0);
+  //slider8.position(width / 2 - 0, height - 20);
+  //slider8.style("width", "80px");
 
 }
 
@@ -62,14 +62,14 @@ function getVector(index, total) {
 
 function draw() {
   
-  let val1 = slider1.value();
-  let val2 = slider2.value();
-  let val3 = slider3.value();
-  let val4 = slider4.value();
-  let val5 = slider5.value();
-  let val6 = slider6.value();
-  let val7 = slider7.value();
-  let val8 = slider8.value();
+  //let val1 = slider1.value();
+  //let val2 = slider2.value();
+  //let val3 = slider3.value();
+  //let val4 = slider4.value();
+  //let val5 = slider5.value();
+  //let val6 = slider6.value();
+  //let val7 = slider7.value();
+  //let val8 = slider8.value();
 
   push();
   //background(255);
@@ -100,7 +100,7 @@ function draw() {
   color(205, 225, 245),
   color(220, 240, 250)]
   
-  translate(width/2, height/2.5);
+  translate(width/2, height/2);
   //stroke(255, 100);
   noFill();
   //strokeWeight(1);
@@ -123,8 +123,8 @@ function draw() {
     stroke(colArray[colArrayCounter]);
     
     strokeWeight(0.5);
-    bezier(a.x,a.y,b.x,b.y,c.x,c.y,d.x,d.y);
-    //line(d.x, b.y, a.x, a.y);
+    bezier(a.x*0.1,a.y*0.1,b.x,b.y,c.x,c.y,d.x*4,d.y*4);
+    //line(d.x, b.y, c.x, c.y);
     //circle(c.x,a.y,50);
     
     push();
